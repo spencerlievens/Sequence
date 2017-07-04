@@ -206,7 +206,7 @@ public:
         consensus.fAllowMinDifficultyBlocks = false;
         consensus.nStakeMinAge = 30 * 60;         // 30 minute minimum stake age
         consensus.nModifierInterval = 15 * 60;    // 15 minutes to elapse before new modifier is computed
-        consensus.nLastPOWBlock = 100000;         // Proof of Work finishes on block 300000
+        consensus.nLastPOWBlock = 9999999999;         // Proof of Work finishes on block 9999999999
         bool startNewChain = false;
 
         genesis = CreateTestNetGenesisBlock(1478107000, 82131309, consensus.bnProofOfWorkLimit.GetCompact(), 1, (0 * COIN));
